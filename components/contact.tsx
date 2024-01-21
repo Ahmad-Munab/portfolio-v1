@@ -8,6 +8,8 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
+import { BsLinkedin } from "react-icons/bs";
+
 export default function Contact() {
     const { ref } = useSectionInView("Contact");
 
@@ -69,6 +71,18 @@ export default function Contact() {
                 />
                 <SubmitBtn />
             </form>
+
+            <p className="text-gray-700 mt-6 flex justify-center items-center gap-2 dark:text-white/80">
+                Or message me in{" "}
+                <a
+                    className=" text-gray-700 hover:text-gray-950 hover:underline flex gap-2 cursor-pointer dark:text-white/90"
+                    href="https://linkedin.com/in/ahmad-munab"
+                    target="_blank"
+                >
+                    Linked In
+                    <BsLinkedin />
+                </a>
+            </p>
         </motion.section>
     );
 }
