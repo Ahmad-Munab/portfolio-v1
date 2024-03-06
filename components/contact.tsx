@@ -37,7 +37,7 @@ export default function Contact() {
                 Please contact me directly at{" "}
                 <a className="underline" href="mailto:ahmadmunab22@gmail.com">
                     ahmadmunab22@gmail.com
-                </a>{" "}
+                </a>{" "}<br/> or via call +8801968450105
                 or through this form.
             </p>
 
